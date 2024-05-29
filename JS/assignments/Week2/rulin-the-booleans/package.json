@@ -1,0 +1,16 @@
+{
+  "name": "rulin-the-booleans",
+  "version": "1.0.0",
+  "description": "![programmer joke: !false (it's funny because it's true)](https://storage.googleapis.com/replit/images/1569512326719_407dad6e2667dc94c76a8c0bcc18e25d.jpeg)",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "scripts": {
+    "test": "mocha -w main.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

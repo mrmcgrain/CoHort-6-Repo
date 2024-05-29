@@ -3,7 +3,6 @@
  **********************************/
 
 
-
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *
@@ -66,7 +65,7 @@ const assert = require('assert');
 describe('double', () => {
   it(`doubles x`, () => {
     double();
-    assert.strictEqual(x, 6);
+    assert.strictEqual(x, 6); //  x === 6
   });
 });
 
