@@ -3,9 +3,20 @@
 Your code goes below.
 
 */
+let x = 3
+let y = 10
+let z = 5
+
+let name = "bob"
 
 
+function multiply(a){
+  x = x * a
+}
 
+function makeFullName(str){
+  name = name + " " + str
+}
 
 
 /*********************************************************************************************************************
