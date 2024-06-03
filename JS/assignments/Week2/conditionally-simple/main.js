@@ -2,8 +2,30 @@
  * YOUR CODE GOES RIGHT HERE! *
  ******************************/
 
+// * Write a function called `isItShort` that returns "That's a small string!" if the given string is shorter than 10 characters. Otherwise, it should return "That's not a small string!"
 
 
+function isItLong(str) {
+
+  if (str.length) {
+    return "That's a long string!"
+  }else {
+    return undefined
+  }
+}
+
+function isItMedium(str){
+   if(str.lenght > 10 && str.length < 20) {
+    return "That's a regular sized string!"
+   } else {
+    return undefined
+   }
+} 
+
+function howLongIsMyString(str) {
+
+
+}
 
 /**********************************
  *      OUR CODE GOES BELOW.      *
