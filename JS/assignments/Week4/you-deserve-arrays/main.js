@@ -1,8 +1,11 @@
 /******************
  * YOUR CODE HERE *
- ******************
-
-
+ ******************/
+function firstItemIsNumber(arr){
+  if(typeof arr[0] === Number){
+    return true
+  }
+}
 
 
  /********************************************
