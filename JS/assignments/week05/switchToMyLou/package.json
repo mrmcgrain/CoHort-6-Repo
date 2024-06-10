@@ -1,0 +1,11 @@
+{
+  "name": "switchtomylou",
+  "version": "1.0.0",
+  "description": "#### Problem 1: Day of the Week",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha -w main.test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
