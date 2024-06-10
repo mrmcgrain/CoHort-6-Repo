@@ -121,9 +121,52 @@ function cc(card) {
 
 }
 
-console.log(cc(2))
-console.log(cc(3))
-console.log(cc("A"))
-console.log(cc(5))
-console.log(cc(6))
-console.log("count", count)
+// console.log(cc(2))
+// console.log(cc(3))
+// console.log(cc("A"))
+// console.log(cc(5))
+// console.log(cc(6))
+// console.log("count", count)
+
+
+
+// Create a function to return all odd numbers from a array
+
+// 1: create a function       -    function findOdds()
+// 2: it will take in a array -    function findOdds(arr)
+//      create empty arr      -    let odds  = []
+// 3: need loop over array    -    for(let i = 0 ; i < arr.length; i++)    
+// 4: isolate odd number      -    if (arr[i] % 2 !== 0)  {
+// 5: store those in a empty arr      odds.push(arr[i])    }
+// 6: return that array       -    return odds
+
+
+// Convert Hours into Seconds
+// Write a function that converts hours into seconds.
+
+// 1: create a function   :    function howManySeconds()
+// 2: taking in hours     :    function howManySeconds(hours)
+// 3: how many minutes in a hour     :  60 mins in one hour
+// 4: how many seconds in a minutes  :  60 seconds in a minute
+// 5: return hours * minutes * seconds    :   hours * 60 * 60
+
+function howManySeconds(hours){
+    console.log("hours", hours)
+
+    let mins = hours *  60
+    console.log("mins", mins)
+
+    let seconds = mins * 60 
+    console.log("seconds", seconds)
+
+    return seconds
+
+}
+
+// Examples
+console.log(howManySeconds(2))// ➞ 7200
+// howManySeconds(10) ➞ 36000
+// howManySeconds(24) ➞ 86400
+// Notes
+// 60 seconds in a minute, 60 minutes in an hour
+// Don't forget to return your answer.
