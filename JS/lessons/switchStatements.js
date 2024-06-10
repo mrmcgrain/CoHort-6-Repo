@@ -24,19 +24,26 @@ student = "Mike"
 function isDay(day) {
 
     if (day == "monday") {
-        return "monday"
+        return "it's monday"
+
     } else if (day == " tuesday") {
-        return "tuesday"
+        return "it's tuesday"
+
     } else if (day == "wednesday") {
-        return "wednesday"
+        return "it's wednesday"
+
     } else if (day == "thursday") {
-        return "thursday"
+        return "it's thursday"
+
     } else if (day == " friday") {
-        return "friday"
+        return "it's friday"
+
     } else if (day == "saturday") {
-        return "saturday"
+        return "it's saturday"
+
     } else if (day == "sunday") {
-        return "sunday"
+        return "it's sunday"
+
     }
     // continue this madness for everyday
 }
@@ -49,7 +56,7 @@ function isDay2(day) {
 
     switch (day) {
 
-        case "monday":
+        case "monday":   //  if ( day === "monday")
             console.log("IT's monday!!!   :( ")
             break;
         case "monday":
@@ -78,54 +85,63 @@ function isDay2(day) {
 
 console.log(isDay2("monday"))
 
-// for ( let i = 0 ; i < 100 ; i++){
+// for (let i = 0; i < 100; i++) {
 //     console.log(i)
-//     continue
+//     break  //  it will exit the loop
+//     console.log("this should not work")
 // }
 
+
+// make a function to count cards in Black Jack
+//  2, 3, 4, 5, 6, increse our count + 1
+//  10, A, Q, K, J  dec our count  - 1
+// need a variable to hold our count
+// need a conditional statement to do the thing to the count
+
 let count = 0
+
 function cc(card) {
 
+    // if( card == 2 || card == 3 || card == 4, card == 5, card == 6){
+    //     count++
+    // }
     switch (card) {
 
-        case 2:  //  if (card === 2)
-        case 3:
-        case 4:
-        case 5:
-        case 6:
+        case 2:   // if ( card == 2)
+        case 3:   //  if ( card == 3)
+        case 4:   //  if ( card == 4)
+        case 5:   //  if ( card == 5)
+        case 6:   // if ( card == 6)
             count++
             break;
-        // same as if we said
-
-        //  if( card === 2 || card === 3 || card === 4 || 
-        //       card ===  5 || card === 6){
-        //        count++
-        //           }
-
         case 10:
         case "J":
         case "Q":
         case "K":
         case "A":
-            count--
-            break;
+            count --
+            break
     }
 
-    if (count >= 1) {
-        // console.log("card", card)
-        console.log(card, count + " Bet")
-    } else {
-        console.log(card, count + " Hold")
+    if ( count > 0){
+        return count + " Bet!"
+    }else {
+        return count + " Hold!!!!!!!!!!!!!"
     }
+
+    console.log(card, "count", count)
 
 
 }
 
-// console.log(cc(2))
-// console.log(cc(3))
-// console.log(cc("A"))
-// console.log(cc(5))
-// console.log(cc(6))
+
+
+
+console.log(cc(2))
+console.log(cc(3))
+console.log(cc("A"))
+console.log(cc("K"))
+console.log(cc("K"))
 // console.log("count", count)
 
 
@@ -150,13 +166,13 @@ function cc(card) {
 // 4: how many seconds in a minutes  :  60 seconds in a minute
 // 5: return hours * minutes * seconds    :   hours * 60 * 60
 
-function howManySeconds(hours){
+function howManySeconds(hours) {
     console.log("hours", hours)
 
-    let mins = hours *  60
+    let mins = hours * 60
     console.log("mins", mins)
 
-    let seconds = mins * 60 
+    let seconds = mins * 60
     console.log("seconds", seconds)
 
     return seconds
@@ -164,7 +180,7 @@ function howManySeconds(hours){
 }
 
 // Examples
-console.log(howManySeconds(2))// ➞ 7200
+// console.log(howManySeconds(2))// ➞ 7200
 // howManySeconds(10) ➞ 36000
 // howManySeconds(24) ➞ 86400
 // Notes
