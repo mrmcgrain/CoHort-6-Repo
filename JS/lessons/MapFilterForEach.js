@@ -9,19 +9,19 @@
 
 
 
-function double(arr) {  //  let arr = [2, 3, 4, 5, 6, 7, 8]
-    let newArr = []  //  this is to hold the new values (doubled)
+// function double(arr) {  //  let arr = [2, 3, 4, 5, 6, 7, 8]
+//     let newArr = []  //  this is to hold the new values (doubled)
 
-    for (let i = 0; i < arr.length; i++) {
-        // newArr.push(arr[i] * 2)
-        console.log("i", i, "arr[i]", arr[i])
-        newArr.push(arr[i] * 2)
-    }
-    console.log("this is the map", arr.map((item) => item * 2))
+//     for (let i = 0; i < arr.length; i++) {
+//         // newArr.push(arr[i] * 2)
+//         console.log("i", i, "arr[i]", arr[i])
+//         newArr.push(arr[i] * 2)
+//     }
+//     console.log("this is the map", arr.map((item) => item * 2))
 
-    return newArr
+//     return newArr
 
-}
+// }
 
 // console.log(double([2, 3, 4, 5, 6, 7, 8]))
 
@@ -33,35 +33,77 @@ function pokemon(name1, name2, name3) {
 
 }
 
-console.log(pokemon("Shawn", "Chris", "Auren"))
+// console.log(pokemon("Shawn", "Chris", "Auren"))
 
 
 // Long stroke .filter()  it is a for loop with a condition 
 
-function filterOdds(arr) {
-    let newArr = []  // empyt [] to hold odd values
+// function filterOdds(arr) {
+//     let newArr = []  // empyt [] to hold odd values
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 !== 0) {
+//             // console.log("Im ODD", "i = ", i, arr[i])
+//             newArr.push(arr[i])
+//         }
+//     }
+
+// console.log("Filter Method", arr.filter((item) => item % 2 !== 0) )
+
+//     return newArr
+
+
+
+
+
+// }
+
+// console.log(filterOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+
+
+
+
+
+
+/////////////////////   AFTERNOON CLASS  //////////////////////////
+
+
+
+// Fun with MAP, Map is a high order function
+// .map returns a array
+// it will do the same thing to every "item" in the area and give you a new array
+
+//  Lets make a function to double every value in a array
+
+function doubleVal(arr) {
+    let newArr = []
+
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 !== 0) {
-            // console.log("Im ODD", "i = ", i, arr[i])
-            newArr.push(arr[i])
-        }
+        newArr.push(arr[i] * 2)
+        // console.log('arr[i]', arr[i])
     }
 
-    console.log("Filter Method", arr.filter((item) => item % 2 !== 0) )
-
+    console.log("THIS IS MAP", arr.map((item) => item * 2))
     return newArr
-
-
-
-
 
 }
 
-console.log(filterOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+// console.log(doubleVal([1,2,3,4,5,6,7,8,9]))
 
+// create a function to filter out and return ODD number
 
+function returnOdds(arr) {
+    let odds = []
+    for (let i = 0; i < arr.length; i++) {
 
-
+        if (arr[i] % 2 !== 0) {
+            console.log("IM and odd BALL", i, arr[i])
+            odds.push(arr[i])
+        }
+    }
+    console.log("Filter BABY", arr.filter((item) => item % 2 !== 0).map((item) => item * 2).filter((item) => item % 10 === 0))
+    return odds
+}
+console.log(returnOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
 
 

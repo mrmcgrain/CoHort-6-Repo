@@ -20,3 +20,32 @@ Other useful commands
 git remote -v     (tells what repo this folder is connected to)
 git reset         (undoes your stagged changes)
 git remote add origin "https://github.com/yourRepo/cohort-6     (re adds your repo to folder)
+
+
+-------------- NEW NEW NEW NEW -------------
+
+Folder Structure: 
+Desktop  
+   Dev
+        ClassRepo    : This is where we pull files in
+        WORKING      : This is where we work out of
+
+
+ in ClassRepo/Cohort-6-repo   
+ git remote -v should say https://github.com/mrmcgrain/CoHort-6-Repo (push)
+
+ in WORKING 
+ git remote -v should say your github address
+
+ In VScode open folder Desktop / Dev
+  right click classRepo  - Open in intergrated  terminal
+            git pull origin main
+    drag new files in to WORKING
+
+when you have uploads ready for github
+   right click your WORKING folder
+      open in Intergrated Terminal
+            git push origin main
+
+
+            
