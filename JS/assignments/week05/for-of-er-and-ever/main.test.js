@@ -42,14 +42,7 @@ if (typeof integersOnly === 'undefined') {
 }
 
 const assert = require('assert');
-const {
-  addAll,
-  countSpaces,
-  countTrues,
-  makeFriendly,
-  cubeAll,
-  addNoises,
-} = require('./your-functions'); // Import your functions
+
 
 describe('addAll', () => {
   it(`adds all the numbers in the array`, () => {
