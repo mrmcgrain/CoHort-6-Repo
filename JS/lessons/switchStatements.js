@@ -126,7 +126,7 @@ function cc(card) {
     if ( count > 0){
         return count + " Bet!"
     }else {
-        return count + " Hold!!!!!!!!!!!!!"
+     7   return count + " Hold!!!!!!!!!!!!!"
     }
 
     console.log(card, "count", count)
