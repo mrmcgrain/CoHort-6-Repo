@@ -35,7 +35,11 @@ ageToAbilities(25) => 'You can do pretty much anything.'
 
 ---
 
+
 ### Problem 2: `oddIndices`
+=======
+<!-- ### Problem 2: `oddIndices` -->
+
 
 Write a function, `oddIndices`, that takes in an array of numbers and returns only the ones that are located at odd indices (indices is plural of index). Recall that the index of the first value in an array (or string) is 0.
 

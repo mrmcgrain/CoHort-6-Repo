@@ -47,6 +47,8 @@ if (typeof integersOnly === 'undefined') {
   integersOnly = undefined;
 }
 
+const assert = require('assert');
+
 
 describe('addAll', () => {
   it(`adds all the numbers in the array`, () => {
