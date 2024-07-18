@@ -16,16 +16,30 @@ const Input = ({ user, setUser }) => {
         e.preventDefault()
         console.log("STATE", user)
     }
-
+    // style={{border: user.username || user.username !== ""? null :"red 1px solid "}} 
     return (
         <>
             {console.log("user", user)}
             <div id="Input">
 
-                <input style={{border: user.username || user.username !== ""? null :"red 1px solid "}} name="username" placeholder='username' onChange={(e) => handleChange(e)}></input>
+                <input
+                    style={{ border: user?.username !== "" ? null : "solid red 1px", color: "black" }}
+                    name="username"
+                    placeholder={user.username !== "" ? "username" : 'enter your username'}
+                    onChange={(e) => handleChange(e)}
+                ></input>
+
+                {/* {user.username !== "" ? <br /> : <p>please enter your user name</p>} */}
                 <br />
 
-                <input name="firstName" placeholder='first name' onChange={(e) => handleChange(e)}></input>
+                <input
+                    name="firstName"
+                    placeholder='first name'
+                    onChange={(e) => handleChange(e)}
+                >
+
+                </input>
+
                 <br />
 
                 <input name="lastName" placeholder='last name' onChange={(e) => handleChange(e)}></input>

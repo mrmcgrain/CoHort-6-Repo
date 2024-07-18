@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Input from './Input'
 
-const ConditionalRendering = ({user, setUser}) => {
+const ConditionalRendering = ({ user, setUser }) => {
 
-    const [render, setRender] = useState(false)
+    const [render, setRender] = useState(true)
 
 
     const handleClick = () => {
@@ -24,15 +24,21 @@ const ConditionalRendering = ({user, setUser}) => {
                     :
                     (
                         <div>
-                        <p>Thank you for your submission</p>
-                        <p>{user.username}</p>
-                        <p>{user.firstName}</p>
-                        <p>{user.lastName}</p>
+                            <p>Thank you for your submission</p>
+                            <p>{user.username}</p>
+                            <p>{user.firstName}</p>
+                            <p>{user.lastName}</p>
                         </div>
                     )
                 }
 
-                <button onClick={() => handleClick()}>submit</button>
+                <button
+                    disabled={user.username && user.username !== ""  && user.firstName && user.firstName !== "" && user.lastName && user.lastName !== "" ? false : true}
+                    onClick={() => handleClick()}
+                >
+                    submit
+                </button>
+
             </div>
         </>
     )
